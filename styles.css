@@ -12,11 +12,9 @@ body{
 	display: flex;
 	padding: 0px;
 	padding-top: 135px;
-	height: 5000px;
+	height: 700px;
 	width: 100%;
-	/* background-image: url('images/cloud_phone.jpg'); */
 	background-color: #d3d3d3;
-	/* align-items: center; */
 	flex-direction: column;
 
 }
@@ -58,12 +56,6 @@ body{
 	opacity: .78;
 	color:#fbf8fd;
 }
-input{
-	font-size: 13px;
-	padding: 10px;
-	border: 1px solid grey;
-	border-radius: 2px;
-}
 .containter{
 	display:flex;
 	justify-content: space-around;
@@ -86,25 +78,19 @@ input{
 
 @media (min-width: 768px) {
 	.main{
-		height: 3700px;
+		height: 700px;
 	}
 	.header{
 		justify-content: center;
-	}
-	input{
-		font-size: 18px;
 	}
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px){
 	.main{
-		height: 3500px;
+		height: 700px;
 	}
 	.header{
 		justify-content: center;
-	}
-	input{
-		font-size: 18px;
 	}
 }
