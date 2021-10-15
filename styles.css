@@ -107,7 +107,18 @@ body{
 	height:800px;
 	background-color: #d3d3d3;
 	opacity: 1;
-	color: #fff;
+	color: #fbf8fd;
+}
+.home-nav{
+	display:flex;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	/* justify-content: space-around; */
+	/* border: 1px solid green; */
+	height: 100%;
 }
 .container-item{
 	display: flex;
@@ -126,11 +137,58 @@ body{
 	color: #fbf8fd;
 }
 .container a :active{
-	background-color: #d3d3d3;
+	background-color:darkred;
+}
+
+/* INDEX */
+.container-item p{
+	padding: 10px;
+	text-align: center;
 }
 #last-container{
 	margin-bottom: 30px;
 }
+
+/* MAPS */
+#map-container{
+	justify-content: space-between;
+	border: 1px solid green;
+	height: 1350px;
+}
+.map-nav{
+	display: flex;
+	width: 90%;
+	justify-content: center;
+	/* align-items: flex-start; */
+	align-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	margin-left: 1px;
+	height: 180px;
+	/* border: 1px solid blue; */
+}
+.map-nav-item{
+	width: 48%;
+	display: flex;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	font-size: 15px;
+	height: 20%;
+	background-color: rgb(251, 68, 84, .75);
+	color:#fbf8fd;
+	/* margin-right: 20px; */
+	
+}
+.map-main{
+	width:90%;
+	border:1px solid black;
+	height: 1000px;
+	margin-bottom: 100px;
+}
+
 .footer{
 	display: flex;
 	justify-content: center;
@@ -150,18 +208,43 @@ body{
 
 @media (min-width: 768px) {
 	.main{
-		height: 700px;
+		height: 1200px;
 		background-image: url(images/valorant-back.jpg);
+		justify-content: space-between;
 	}
 	.header{
 		justify-content: center;
+	}
+	.header img{
+		margin-left: 45px;
+	}
+	.logo h1{
+		font-size: 35px;
+		margin-left: 110px;
+	}
+	.float-text{
+		width: 45%;
+		font-size: 20px;
+	}
+	.container{
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 500px;
+	}
+	.container-item{
+		margin-bottom: 0px;
+		margin-right: 20px;
+	}
+	#last-container{
+		margin-bottom: 0px;
+		margin-right: 0px;
 	}
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px){
 	.main{
-		height: 700px;
+		height: 1500px;
 		background-image: url(images/valorant-back.jpg);
 	}
 	.header{
