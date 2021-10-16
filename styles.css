@@ -44,7 +44,7 @@ body{
 }
 .logo h1{
 	font-size: 25px;
-	margin-left: 30px;
+	margin-left: 20px;
 	opacity: .78;
 	color:#fbf8fd;
 }
@@ -71,15 +71,18 @@ body{
 	padding: 0px;
 	/* padding-top: 200px; */
 	margin-top: 170px;
-	height: 1350px;
+	height: 1000px;
 	width: 100%;
 	/* border: 1px solid black; */
 	background-color: #d3d3d3;
-	background-image: url(images/mobile-back-2.jpg);
+	/* background-image: url(images/mobile-back-2.jpg); */
 	background-repeat: no-repeat;
 	background-size: contain;
 	flex-direction: column;
 
+}
+#index-main{
+	background-image: url(images/mobile-back-2.jpg);
 }
 .float-text{
 	display:flex;
@@ -92,7 +95,7 @@ body{
 	/* justify-content: space-around; */
 	/* border: 1px solid green; */
 	/* height:500px; */
-	background-color: rgb(251, 68, 84, .3);
+	background-color: rgb(251, 68, 84, .6);
 	color: #fff;
 }
 .container{
@@ -104,7 +107,7 @@ body{
 	width: 100%;
 	/* justify-content: space-around; */
 	/* border: 1px solid green; */
-	height:800px;
+	height:550px;
 	background-color: #d3d3d3;
 	opacity: 1;
 	color: #fbf8fd;
@@ -183,11 +186,194 @@ body{
 	
 }
 .map-main{
+	display: flex;
 	width:90%;
+	flex-direction: column;
+	color: #3d3d3d;
 	border:1px solid black;
 	height: 1000px;
 	margin-bottom: 100px;
 }
+.map-main img{
+	width: 250px;
+	height: 125px;
+
+}
+.map-img{
+	width: 50px;
+}
+
+/* AGENTS */
+#agent-div-main{
+	height:950px;
+}
+#agent-container{
+	/* border: 1px solid black; */
+	justify-content: space-between;
+	height: 870px;
+}
+.agent-nav{
+	display: flex;
+	margin-top:20px;
+	width:100%;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* border: 1px solid green; */
+	height:300px;
+}
+.agent-nav-item{
+	display:flex;
+	border:1px solid black;
+	justify-content: center;
+	padding: 5px;
+	background-color: rgb(251, 68, 84, 1);
+	font-size: 15px;
+	color: #fbf8fd;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 15px;
+	width:25%;
+	height:10%;
+}
+.agent-main{
+	display: flex;
+	width:100%;
+	flex-direction: column;
+	margin-top: 30px;
+	/* justify-content: center; */
+	/* align-items: center; */
+	color: black;
+	/* border: 1px solid blue; */
+	height: 300px;
+}
+.agent-main img{
+	width: 300px;
+	height: 300px;
+}
+.agent-name{
+	display: flex;
+	justify-content: flex-start;
+	/* border: 1px solid black; */
+	border-radius: 5px;
+	padding: 5px;
+	/* margin-left: 45px; */
+	background-color: rgb(251, 68, 84, .3);
+	width:100%;
+}
+.agent-name h3{
+	font-size: 35px;
+}
+.agent-title{
+	display: flex;
+	margin-left: 55px;
+	margin-right:20px;
+}
+.agent-role{
+	display: flex;
+	align-self:center;
+	/* border: 1px solid black; */
+}
+.agent-role img{
+	width:30px;
+	height:30px;
+}
+.agent-image{
+	display: flex;
+	align-self: center;
+
+}
+.agent-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* border: 1px solid black; */
+}
+.agent-ability{
+	margin-top: 5px;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+}
+.agent-ability-item{
+	display: flex;
+	width: 100px;
+	height:150px;
+	padding: 10px;
+	margin-right: 5px;
+	flex-wrap: wrap;
+	background-color:rgb(131,131,131,.4);
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+.agent-ability-item img{
+	width: 50px;
+	height: 50px;
+}
+
+/* GUNS */
+.gun-main{
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	height: 1000px;
+	flex-wrap: wrap;
+	/* border: 1px solid green; */
+}
+.gun-header{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	color:#3d3d3d;
+	margin-bottom: 30px;
+}
+#gun-main-size{
+	height: 1550px;
+}
+#gun-container{
+	height: 1100px;
+}
+
+.gun-item{
+	display: flex;
+	border: 1px solid red;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	width: 45%;
+	height: 150px;
+	flex-direction: column;
+}
+.gun-name{
+	display: flex;
+	align-self: center;
+	color:#3d3d3d;
+}
+.gun-image{
+	display:flex;
+}
+.gun-image img{
+	width: 140px;
+	/* height: 40px; */
+}
+.gun-image-small{
+	display:flex;
+}
+.gun-image-small img{
+	width: 90px;
+	/* height: 40px; */
+}
+
+
+
+
+
 
 .footer{
 	display: flex;
@@ -209,18 +395,20 @@ body{
 @media (min-width: 768px) {
 	.main{
 		height: 1200px;
-		background-image: url(images/valorant-back.jpg);
 		justify-content: space-between;
+	}
+	#index-main{
+		background-image: url(images/valorant-back.jpg);
 	}
 	.header{
 		justify-content: center;
 	}
 	.header img{
-		margin-left: 45px;
+		margin-left: 75px;
 	}
 	.logo h1{
 		font-size: 35px;
-		margin-left: 110px;
+		margin-left: 40px;
 	}
 	.float-text{
 		width: 45%;
@@ -239,15 +427,27 @@ body{
 		margin-bottom: 0px;
 		margin-right: 0px;
 	}
+	.home-nav{
+		flex-direction: row;
+	}
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px){
 	.main{
 		height: 1500px;
+	}
+	#index-main{
 		background-image: url(images/valorant-back.jpg);
 	}
 	.header{
 		justify-content: center;
+	}
+	.header img{
+		margin-left: 200px;
+	}
+	.logo h1{
+		font-size: 35px;
+		margin-left: 50px;
 	}
 }

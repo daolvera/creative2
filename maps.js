@@ -1,11 +1,8 @@
-const skinUrl = ('https://valorant-api.com/v1/weapons/skins')
-const agentUrl = ("https://valorant-api.com/v1/agents");
-
-
 // fetch(mapsUrl)
 //   .then(response => response.json())
 //   .then(response => console.log(response))
 //   .catch(err => console.error(err));
+
 
 //MAPS
 const mapsUrl = ("https://valorant-api.com/v1/maps");
@@ -20,8 +17,18 @@ function loadMap(mapIndex){
     var tempMapName = response["data"][mapIndex].displayName;
     var tempMapImg = response["data"][mapIndex].splash;
     var tempMapHTML;
-    tempMapHTML += "<div class='map-image'>" + tempMapImg + "</div>";
-    tempMapHTML += "<div class='map-callouts'>" + tempMapName + "</div>";
+    let callouts = response["data"][mapIndex].callouts;
+    var tempMapCallouts = "<ul class='map-callouts'>";
+    for (var i = 0; i < callouts.length; i++){
+      // console.log(callouts);
+      var tempMapCall = "<li class='map-call'> " + callouts[i].regionName + "</li>";
+
+      tempMapCallouts += tempMapCall;
+    }
+    tempMapCallouts += "</ul>"
+    tempMapHTML = `<img class='map-image' src=${tempMapImg}>`;
+    tempMapHTML += "<div class='map-name'>" + tempMapName + "</div>";
+    tempMapHTML += tempMapCallouts;
     mapMain.innerHTML = tempMapHTML;
   });
 };
