@@ -301,19 +301,22 @@ body{
 }
 .agent-ability-item{
 	display: flex;
-	width: 100px;
+	width: 70px;
 	height:150px;
 	padding: 10px;
 	margin-right: 5px;
+	font-size: 11px;
 	flex-wrap: wrap;
+	justify-content:center ;
+	text-align: center;
 	background-color:rgb(131,131,131,.4);
 	border: 1px solid black;
 	border-radius: 5px;
 
 }
 .agent-ability-item img{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 }
 
 /* GUNS */
@@ -354,6 +357,10 @@ body{
 	display: flex;
 	align-self: center;
 	color:#3d3d3d;
+}
+.gun-name h3{
+	/* font-size: 22px; */
+	font-style: none;
 }
 .gun-image{
 	display:flex;
@@ -399,6 +406,7 @@ body{
 	}
 	#index-main{
 		background-image: url(images/valorant-back.jpg);
+		height: 900px;
 	}
 	.header{
 		justify-content: center;
@@ -417,7 +425,7 @@ body{
 	.container{
 		flex-direction: row;
 		flex-wrap: wrap;
-		height: 500px;
+		height: 450px;
 	}
 	.container-item{
 		margin-bottom: 0px;
@@ -429,6 +437,32 @@ body{
 	}
 	.home-nav{
 		flex-direction: row;
+	}
+	#agent-div-main{
+		height: 1100px;
+	}
+	.agent-main{
+		margin-bottom: 250px;
+	}
+	.agent-ability-item{
+		width: 120px;
+		margin-right: 25px;
+		font-size: 18px;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.agent-nav-item{
+		font-size: 18px;
+		width: 35%;
+	}
+	.gun-image img{
+		width: 200px;
+		/* height: 40px; */
+	}
+	.gun-image-small img{
+		width: 120px;
+		/* height: 40px; */
 	}
 }
 
@@ -449,5 +483,17 @@ body{
 	.logo h1{
 		font-size: 35px;
 		margin-left: 50px;
+	}
+	.agent-title{
+		margin-left: 130px;
+		margin-right:20px;
+	}
+	.gun-image img{
+		width: 250px;
+		/* height: 40px; */
+	}
+	.gun-image-small img{
+		width: 150px;
+		/* height: 40px; */
 	}
 }
