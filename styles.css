@@ -364,17 +364,11 @@ body{
 }
 .gun-image{
 	display:flex;
-}
-.gun-image img{
 	width: 140px;
-	/* height: 40px; */
 }
 .gun-image-small{
 	display:flex;
-}
-.gun-image-small img{
 	width: 90px;
-	/* height: 40px; */
 }
 
 

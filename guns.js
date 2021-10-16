@@ -2,9 +2,14 @@ const skinUrl = ('https://valorant-api.com/v1/weapons/skins');
 const gunUrl = ('https://valorant-api.com/v1/weapons');
 const gunMain = document.querySelector(".gun-main");
 
-function changeSkin(){
-	console.log("hello");
-}
+function changeSkin(gunIndex, skinIndex){
+	fetch(gunUrl)
+	.then(response => response.json())
+	.then(response => {
+		var gunImg =  response["data"][gunIndex]["skins"][skinIndex].displayIcon;
+		return gunImg;
+	});
+};
 
 function loadGun(gunIndex){
 	fetch(gunUrl)
@@ -15,11 +20,12 @@ function loadGun(gunIndex){
 	  var tempGunHTML;
 	  tempGunHTML = '<div class ="gun-item">';
 	  tempGunHTML += "<div class='gun-name'> <h3>" + tempGunName + "</h3> </div> ";
+	  var skinIndex = 0;
 	  if (gunIndex > 6 && gunIndex < 12){
-		tempGunHTML += `<div class='gun-image-small'> <img src=${tempGunImg} > </div> `;  
+		tempGunHTML += `<input type='image' class='gun-image-small' id='${gunIndex}-basic' src = ${tempGunImg}  onClick='changeSkin(${tempGunImg}, ${skinIndex})'>`;  
 	  }
 	  else{
-	  	tempGunHTML += `<div class='gun-image'> <img src=${tempGunImg}> </div> `;
+	  	tempGunHTML += `<input type='image' class='gun-image' src= ${tempGunImg} onClick= 'changeSkin(${gunIndex},  0)' >`;
 	  }
 	  tempGunHTML += "</div>";
 	  gunMain.innerHTML += tempGunHTML;
