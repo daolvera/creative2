@@ -362,15 +362,59 @@ body{
 	/* font-size: 22px; */
 	font-style: none;
 }
+label{
+	color: #3d3d3d;
+}
+.skin-selector{
+	display: flex;
+	align-content: center;
+	/* border: 1px solid black; */
+	padding: 2px;
+	justify-content: space-between;
+}
+.temp-skin-0,
+.temp-skin-1,
+.temp-skin-2,
+.temp-skin-3,
+.temp-skin-3,
+.temp-skin-4,
+.temp-skin-5,
+.temp-skin-6,
+.temp-skin-7,
+.temp-skin-8,
+.temp-skin-9,
+.temp-skin-10,
+.temp-skin-11,
+.temp-skin-12,
+.temp-skin-13,
+.temp-skin-14,
+.temp-skin-15,
+.temp-skin-16,
+.temp-skin-17{
+	width: 100px;
+	margin-right: 10px;
+	border-radius: 5px;
+	background-color: rgb(131,131,131,.4);
+}
 .gun-image{
 	display:flex;
+}
+.gun-image img{
 	width: 140px;
 }
 .gun-image-small{
 	display:flex;
+}
+.gun-image-small img{
 	width: 90px;
 }
+.gun-image-knife{
+	display: flex;
 
+}
+.gun-image-knife img{
+	width: 100px;
+}
 
 
 
@@ -458,10 +502,39 @@ body{
 		width: 120px;
 		/* height: 40px; */
 	}
+	.gun-image-knife img{
+		width: 150px;
+	}
+	.temp-skin-0,
+	.temp-skin-1,
+	.temp-skin-2,
+	.temp-skin-3,
+	.temp-skin-3,
+	.temp-skin-4,
+	.temp-skin-5,
+	.temp-skin-6,
+	.temp-skin-7,
+	.temp-skin-8,
+	.temp-skin-9,
+	.temp-skin-10,
+	.temp-skin-11,
+	.temp-skin-12,
+	.temp-skin-13,
+	.temp-skin-14,
+	.temp-skin-15,
+	.temp-skin-16,
+	.temp-skin-17{
+	width: 150px;
+	margin-right: 10px;
+	border-radius: 5px;
+	padding: 2px;
+	font-size: 15px;
+	background-color: rgb(131,131,131,.4);
+}
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px){
+@media (min-width: 1280px){
 	.main{
 		height: 1500px;
 	}
@@ -482,6 +555,9 @@ body{
 		margin-left: 130px;
 		margin-right:20px;
 	}
+	.gun-item{
+		flex-direction: row;
+	}	
 	.gun-image img{
 		width: 250px;
 		/* height: 40px; */
@@ -489,5 +565,8 @@ body{
 	.gun-image-small img{
 		width: 150px;
 		/* height: 40px; */
+	}
+	.gun-image-knife img{
+		width: 160px;
 	}
 }
