@@ -540,6 +540,7 @@ label{
 	}
 	#index-main{
 		background-image: url(images/valorant-back.jpg);
+		height: 1200px;
 	}
 	.header{
 		justify-content: center;
@@ -550,6 +551,10 @@ label{
 	.logo h1{
 		font-size: 35px;
 		margin-left: 50px;
+	}
+	.float-text{
+		width: 24%;
+		text-align: center;
 	}
 	.agent-title{
 		margin-left: 130px;
